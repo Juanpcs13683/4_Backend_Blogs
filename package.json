@@ -1,0 +1,19 @@
+{
+  "name": "blog_list_nodejs",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Juanpcs13683",
+  "license": "ISC",
+  "devDependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "http": "^0.0.1-security",
+    "mongoose": "^6.6.5",
+    "nodemon": "^2.0.20"
+  }
+}
