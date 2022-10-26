@@ -1,0 +1,80 @@
+GET http://localhost:3003/api/blogs
+
+###
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+
+{
+  "title": "creating something else with user info",
+  "author": "juan",
+  "url": "http://www.different.com",
+  "userId": "63572de755f9f428014e81c5",
+  "likes": 6
+}
+###
+DELETE http://localhost:3003/api/blogs/6354fd9664350abb58f4e8ad
+
+###
+PUT http://localhost:3003/api/blogs/6354fe5fc7bd7c27d83fe2a4
+Content-Type: application/json
+
+{
+  "title": "updated thing 1",
+  //"author": "juan",
+  "url": "http://www.algo_nuevo.com",
+  "likes": 66
+}
+###
+GET http://localhost:3003/api/users
+
+###
+GET http://localhost:3003/api/blogs
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJvb3QiLCJpZCI6IjYzNThlM2U4NTAzODMxMjZmMGJhNTlhZCIsImlhdCI6MTY2Njc3MzcxNCwiZXhwIjoxNjY2Nzc3MzE0fQ.clNM6xXKm0UOzfh2-jOJMpyafN6xo3ujBQDE8aXK3Xw
+
+###
+POST http://localhost:3003/api/users
+Content-Type: application/json
+
+{
+  "username": "admin",
+  "name": "admin",
+  "password": "admin"
+}
+
+###
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+//Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWQiOiI2MzU4YzNjOGQyNDBiYzdhMmY2NjQ3OTgiLCJpYXQiOjE2NjY3Njk1MzksImV4cCI6MTY2Njc3MzEzOX0.G6CoBHRgsHQqUT93CtFc9gIBKdZT13imHU1SPdYnKAk
+//eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWQiOiI2MzU4YzNjOGQyNDBiYzdhMmY2NjQ3OTgiLCJpYXQiOjE2NjY3NjE2OTAsImV4cCI6MTY2Njc2NTI5MH0.IbcUK_OBDdvDEym3BIpty5RRI1ODYEYrIi-UdjqJCek
+
+{
+  "title": "vlog with token",
+  "author": "juan",
+  "url": "http://www.differentwithtoken.com",
+  "userId": "6358c3c8d240bc7a2f664798",
+  "likes": 6
+}
+
+###
+POST http://localhost:3003/api/users
+Content-Type: application/json
+
+{
+  "username": "newadmi",
+  "name": "new",
+  "password": "new"
+}
+
+###
+POST http://localhost:3003/api/users
+Content-Type: application/json
+
+{
+    "username": "root",
+    "name": "Superuser",
+    "password": "salainen"
+}
+
+###
+DELETE http://localhost:3003/api/blogs/6358ee55a4fe2b1fa5309b87
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWQiOiI2MzU4YzNjOGQyNDBiYzdhMmY2NjQ3OTgiLCJpYXQiOjE2NjY3NzM2MTUsImV4cCI6MTY2Njc3NzIxNX0.ISDDaR9MJ91Zq9-4xfROVN04hpoHCxipzJ6QbfuPevM
